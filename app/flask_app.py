@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def print_message():
-    return = "I am running on '" + os.environ['APP'] + "' app!!!"
+    return "I am running on '" + os.environ['APP'] + "' app!!!"
 
 @app.route('/healthcheck', methods=['GET'])
 def print_helthcheck():
